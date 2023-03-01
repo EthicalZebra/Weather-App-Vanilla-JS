@@ -54,6 +54,16 @@ li:first-letter {
   margin-top: 30px;
 }
 
+.temperature-container .units .active {
+  color: #212121;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temperature-container .units .active:hover {
+  text-decoration: none;
+}
+
 .units {
   color: #212121;
   font-size: 28px;
