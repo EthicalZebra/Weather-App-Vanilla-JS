@@ -13,55 +13,73 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="weather-app-wrapper">
+    <div class="weather-app-wrapper">
+        <div class="container">
             <div class="weather-app">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="d-flex weather-temperature">
-                            <div class="row">
-                                <form id="search-form" class="mb-5">
-                                    <div class="col-9">
-                                        <input type="search" placeholder="Type a city here.." class="form-control mb-1"
-                                            id="city-input" autocomplete="off" />
 
-                                    </div>
-                                    <div class="col-3">
-                                        <input type="submit" value="search" class="btn btn-primary" />
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="overview">
-                                <h1 id="city"></h1>
-                                <ul>
-                                    <li>Last updated: <span id="date"></span></li>
-                                    <li id="description"></li>
-                                    <li>Humidity: <span id="humidity"></span>%</li>
-                                    <li>Wind: <span id="wind"></span> Km/h</li>
-                                </ul>
-                            </div>
+                <form id="search-form" class="mb-5">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Type a city here.." class="form-control search-input"
+                                id="city-input" autocomplete="off" />
+                        </div>
+                        <div class="col-3 p-0">
+                            <input type="submit" value="search" class="btn btn-primary w-100" />
+                        </div>
+                </form>
+            </div>
+            <div class="row">
+
+                <div class="col-6">
+                    <div class="d-flex weather-temperature">
+                        <div class="row">
+
+                        </div>
+                        <div class="overview">
+                            <h1 id="city"></h1>
+                            <ul>
+                                <li>Last updated: <span id="date"></span></li>
+                                <li id="description"></li>
+                                <li>Humidity: <span id="humidity"></span>%</li>
+                                <li>Wind: <span id="wind"></span> Km/h</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="d-flex temperature-container">
-                            <img src="" alt="" id="current-weather-icon" />
-                            <div>
-                                <span id="temperature"></span>
-                                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#"
-                                        id="fahrenheit-link">°F</a></span>
-                            </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex temperature-container">
+                        <img src="" alt="" id="current-weather-icon" />
+                        <div>
+                            <span id="temperature"></span>
+                            <span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#"
+                                    id="fahrenheit-link">°F</a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <small>
-                    <a href="https://github.com/EthicalZebra/Weather-App-Vanilla-JS" target="_blank">Open-source
-                        code</a>
-                    by Clarice Wynne
-                </small>
+            <div class="weather-forcast">
+                <div class="row>">
+                    <div class="col-2">
+                        <div class="weather-forecast-date">
+                            Thur
+                        </div>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon" width="42" />
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max"> 18° </span>
+                            <span class="weather-forecast-temperature-min"> 12° </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="footer">
+            <small>
+                <a href="https://github.com/EthicalZebra/Weather-App-Vanilla-JS" target="_blank">Open-source
+                    code</a>
+                by Clarice Wynne
+            </small>
+        </div>
+    </div>
     </div>
     <script src="src/app.js"></script>
 </body>

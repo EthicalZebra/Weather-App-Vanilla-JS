@@ -40,6 +40,15 @@ li:first-letter {
   padding: 40px;
 }
 
+.weather-app .btn {
+  background: #885df1;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 0;
+}
+
 .overview {
   margin-top: 20px;
 }
@@ -87,10 +96,45 @@ li:first-letter {
   margin: 10px, 0;
 }
 
+.form-control {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  padding: 15px 20px;
+}
+
 #city {
   color: #272142;
   font-size: 38px;
   font-weight: 700;
   line-height: 48px;
   margin: 20px 0 10px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: rgb(214, 196, 255);
+}
+
+.weather-forecast-temperature-max {
+  color: #f65282;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.weather-forecast-temperature-min {
+  color: #f65282;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+
+  opacity: 0.6;
 }
